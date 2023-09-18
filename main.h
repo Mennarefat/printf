@@ -1,13 +1,9 @@
-#ifndef _MAIN_H_
-#define _MAIN_H
-
+#ifndef MAIN_H
+#define MAIN_H
 #include <stdarg.h>
-#include <stdio>
+#include <stdio.h>
 #include <unistd.h>
-
-
-
 int _printf(const char *format, ...);
-
-
+int putchr(char c);
+int putss(char *c);
 #endif
