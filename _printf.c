@@ -1,4 +1,6 @@
 #include "main.h"
+int putchr(char c);
+int putss(char *c);
 /**
 *_printf - Printf to stdout formatted text
 *@format: format specifier
@@ -11,7 +13,7 @@ va_list args;
 if (!format || (format[0] == '%' && format[1] == '\0'))
 return (-1);
 va_start(args, format);
-for (i = 0; format[i] != '\0'; i++)
+for (i = 0; format && format[i] != '\0'; i++)
 if (format[i] != '%')
 {
 putchr(format[i]);
