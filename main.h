@@ -15,5 +15,6 @@ int print_percent(va_list types, char buffer[],int flags, int width, int precisi
 int print_int(va_list types, char buffer[],int flags, int width, int precision, int size);
 int print_binary(va_list types, char buffer[],int flags, int width, int precision, int size);
 
+int get_size(const char *format, int *i)
 
 #endif
