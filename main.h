@@ -6,4 +6,5 @@
 int _printf(const char *format, ...);
 int inchr(char c);
 int insert(char *c);
+int putss (char *c);
 #endif
